@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="blog-container" class="hidden">
+        <h2>Welcome to the Blog</h2>
+        <button id="logout-button">Logout</button>
+        <h3>Submit a New Blog Post</h3>
+        <form id="post-form">
+            <input type="text" id="title" placeholder="Title" required>
+            <textarea id="content" placeholder="Content" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <h3>Blog Posts</h3>
+        <div id="posts"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
